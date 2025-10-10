@@ -9,3 +9,24 @@
 /ChoosingOption.class
 /InputFromKeyboard.class
 /StarsTriangle.class
+# Mac system files
+.DS_Store
+
+# Eclipse / Java build
+bin/
+*.class
+*.log
+*.tmp
+*.swp
+
+# Eclipse project settings
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Build output
+target/
+out/
