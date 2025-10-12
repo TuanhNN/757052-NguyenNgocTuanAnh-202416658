@@ -1,25 +1,2 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2865
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 TimesNewRomanPS-BoldMT;\f1\fmodern\fcharset0 CourierNewPS-BoldMT;\f2\froman\fcharset0 Times-Roman;
-\f3\fswiss\fcharset0 Arial-ItalicMT;\f4\froman\fcharset0 Times-Italic;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red227\green227\blue226;\red227\green229\blue232;
-}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c91280\c91280\c90938;\cssrgb\c91196\c91984\c92933;
-}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\qj\partightenfactor0
-
-\f0\b\fs28 \cf2 \expnd0\expndtw0\kerning0
-\ul \ulc2 \outl0\strokewidth0 \strokec2 - If you create a constructor method to build a 
-\f1 DVD
-\f0  by title then create a constructor method to build a 
-\f1 DVD
-\f0  by category. Does JAVA allow you to do this?\'a0
-\f2\b0 \ulnone \
-\pard\pardeftab720\partightenfactor0
-
-\f3\i \cf2 \strokec3 \
-\pard\pardeftab720\partightenfactor0
-
-\f4 \cf2 \strokec4 - Even though they are functionally different, the above two constructors cannot exist together in the DigitalVideoDisc class because Java only differentiates them based on the method/constructor signature.\
-}
+If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. Does JAVA allow you to do this?
+- Even though they are functionally different, the above two constructors cannot exist together in the DigitalVideoDisc class because Java only differentiates them based on the method/constructor signature.
