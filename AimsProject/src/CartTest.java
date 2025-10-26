@@ -1,4 +1,3 @@
-import java.net.Authenticator;
 
 public class CartTest {
 
