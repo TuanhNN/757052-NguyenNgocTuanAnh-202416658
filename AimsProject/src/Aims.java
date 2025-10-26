@@ -1,4 +1,3 @@
-package AimsProject.AimsProject.src;
 
 import java.util.ArrayList;
 import java.util.Scanner;
