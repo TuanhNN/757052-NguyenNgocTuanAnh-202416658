@@ -109,7 +109,7 @@ public class DigitalVideoDisc {
 		return id + ". DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + " $";
 	}
 
-
+	// for search by title
 	public boolean isMatch(String title) {
 
 	    String searchTitle = title.toLowerCase();

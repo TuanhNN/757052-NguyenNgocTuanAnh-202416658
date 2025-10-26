@@ -65,6 +65,7 @@ public class Cart {
 		System.out.println("**************************************************");
 	}
 	
+	// search by id
 	public void search(int id) {
 	    boolean found = false;
 	    for (int i = 0; i < qtyOrdered; i++) {
@@ -81,6 +82,7 @@ public class Cart {
 	    }
 	}
 
+	// search by title
 	public void search(String title) {
 	    boolean found = false;
 	    System.out.println("Search results for title: \"" + title + "\"");
