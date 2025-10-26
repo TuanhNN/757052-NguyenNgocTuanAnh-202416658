@@ -1,3 +1,5 @@
+package AimsProject.AimsProject.src;
+
 
 public class DigitalVideoDisc {
 	private String title;

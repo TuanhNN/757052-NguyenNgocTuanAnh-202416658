@@ -1,3 +1,5 @@
+package AimsProject.AimsProject.src;
+
 
 public class Cart {
 	public static final int MAX_NUMBERS_ORDERED = 20;
@@ -10,9 +12,30 @@ public class Cart {
 			qtyOrdered++;
 			System.out.println(disc.getTitle() + " has been added.");
 		} else {
-			System.out.println("The cart is almost full!");
+			System.out.println("The cart is almost full! Could not add " + disc + " and the remaining.");
 		}
 	}
+	
+	// Overloading
+	public void addDigitalVideoDisc(DigitalVideoDisc...dvdList) {
+		for (DigitalVideoDisc disc : dvdList) {
+			if (qtyOrdered < MAX_NUMBERS_ORDERED) {
+				itemOrdered[qtyOrdered] = disc;
+				qtyOrdered++;
+				System.out.println(disc.getTitle() + " has been added.");
+			} else {
+				System.out.println("The cart is almost full! Could not add " + disc + " and the remaining.");
+				break;
+			}
+		}
+	}
+	
+	public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+		addDigitalVideoDisc(dvd1);
+		addDigitalVideoDisc(dvd2);
+	}
+
+	
 	public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
 		for (int i = 0; i < MAX_NUMBERS_ORDERED; i++) {
 			if (itemOrdered[i] == disc) {
