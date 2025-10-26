@@ -30,6 +30,8 @@ public class Aims {
 		// Add to cart
 		anOrder.addDigitalVideoDisc(dvd1,dvd2);
 		
+		
+		System.out.println("The ID of " + dvd1.getTitle()+ " is " + dvd1.getId());
 		// Show DVD list 
 		// print total cost
 		//System.out.println("Total cost: ");
