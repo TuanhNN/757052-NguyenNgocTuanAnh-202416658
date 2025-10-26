@@ -103,4 +103,27 @@ public class DigitalVideoDisc {
 	public int getId() {
 		return id;
 	}
+
+	@Override
+	public String toString() {
+		return id + ". DVD - " + title + " - " + category + " - " + director + " - " + length + ": " + cost + " $";
+	}
+
+
+	public boolean isMatch(String title) {
+
+	    String searchTitle = title.toLowerCase();
+	    String discTitle = this.title.toLowerCase();
+
+	    String[] searchWords = searchTitle.split(" ");
+	    
+	    for (String word : searchWords) {
+
+	        if (!discTitle.contains(word)) {
+	            return false;
+	        }
+	    }
+
+	    return true;
+	}
 }
