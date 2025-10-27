@@ -1,0 +1,2 @@
+Java is pass by value language. All primitive data type when pass into a function is created as a copy, so changing it's copy in a function don't affect the variable out side of function
+For objects, a copy of the reference is pass to, like 2 pointer pointing to the same object, so chaging the endpoint of the pointer in the function don't actually change the pointer outside the function. However, if we change the atributes of the endpoint, it will affect the object -> calling that atributes outside changes as well
