@@ -1,6 +1,8 @@
 package hust.soict.dsai.test.cart;
+
 import hust.soict.dsai.aims.cart.Cart;
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
 
 public class CartTest {
 
@@ -8,20 +10,17 @@ public class CartTest {
 		// TODO Auto-generated method stub
 		Cart cart = new Cart();
 		
-		DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.5f);
+		Media dvd1 = new DigitalVideoDisc("The Lion King");
 		DigitalVideoDisc dvd2 = new DigitalVideoDisc("Aladdin", "Animation", 18.0f);
-		DigitalVideoDisc dvd3 = new DigitalVideoDisc("Inception", 15.75f);
 		
-		cart.addDigitalVideoDisc(dvd1, dvd2, dvd3);
 		
-		cart.printCart();
+		cart.addMedia(dvd1, dvd2);
 		
-		cart.search(1);
-		cart.search(99);
+		//cart.printCart();
 		
-		cart.search("The Lion King");
-		cart.search("King");
-		cart.search("Hehe");
+		//cart.search(1);
+		//cart.search(99);
+		
 	}
 
 }
