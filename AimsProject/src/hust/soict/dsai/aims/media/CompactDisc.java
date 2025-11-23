@@ -8,34 +8,20 @@ public class CompactDisc extends Disc implements Playable {
 	private String artist;
 	private List<Track> tracks = new ArrayList<>();
 	
-	public CompactDisc() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public CompactDisc(String title, String artist, List<Track> tracks) {
-		super(title);
-		this.artist = artist;
-		this.tracks = tracks;
-	}
-
-	public CompactDisc(String title, String category, String artist, List<Track> tracks) {
-		super(title, category);
-		this.artist = artist;
-		this.tracks = tracks;
-	}
-
-	public CompactDisc(String title, String category, float cost, String artist, List<Track> tracks) {
-		super(title, category, cost);
-		this.artist = artist;
-		this.tracks = tracks;
-	}
-
-	public CompactDisc(String title, String category, float cost, int length, String director, String artist,
-			List<Track> tracks) {
+	public CompactDisc(String title, String category, int length, String director, String artist, List<Track> tracks,  float cost) {
 		super(title, category, cost, length, director);
 		this.artist = artist;
 		this.tracks = tracks;
 	}
+
+
+
+	public CompactDisc(String title, String category, String artist, float cost) {
+		super(title, category, cost);
+		this.artist = artist;
+	}
+
+
 
 	public String getArtist() {
 		return artist;
@@ -74,4 +60,14 @@ public class CompactDisc extends Disc implements Playable {
 			 track.play();
 		 }
 	 }
+	 
+	 @Override
+	    public String toString() {
+	        return this.getId() + " - CD: " + this.getTitle() +
+	                " - Category: " + this.getCategory() +
+	                " - Artist" + this.getArtist() +
+	                " - Length: " + this.getLength() + " seconds" + 
+	                " - Cost: " + this.getCost() + "$";
+	    }
+	 
 }
