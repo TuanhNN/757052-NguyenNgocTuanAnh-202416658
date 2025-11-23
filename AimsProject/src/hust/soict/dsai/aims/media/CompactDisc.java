@@ -41,6 +41,7 @@ public class CompactDisc extends Disc implements Playable {
 		return artist;
 	}
 	
+	// ADD n REMOVE track
 	public void addTrack(Track trackName) {
 		if(!tracks.contains(trackName)) {
 			tracks.add(trackName);
