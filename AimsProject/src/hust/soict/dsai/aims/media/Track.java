@@ -15,11 +15,6 @@ public class Track implements Playable {
 		this.length = length;
 	}
 
-	public Track(String title) {
-		super();
-		this.title = title;
-	}
-
 	public String getTitle() {
 		return title;
 	}
@@ -32,5 +27,15 @@ public class Track implements Playable {
 	public void play() {
 		System.out.println("Playing track: " + this.getTitle());
 		System.out.println("Track's length: " + this.getLength());
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+	    if (this == o) return true;
+	    if (!(o instanceof Track)) return false;
+
+	    Track track = (Track) o;
+	    return this.getTitle().equalsIgnoreCase(track.getTitle())
+	        && this.getLength() == track.getLength();
 	}
 }
