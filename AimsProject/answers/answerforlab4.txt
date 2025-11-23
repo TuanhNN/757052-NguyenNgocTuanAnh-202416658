@@ -1,0 +1,41 @@
+10: If the passing object is not an instance of Media, the equals() method will return false because the comparison cannot be performed. The equals() method in the Media class includes a check to ensure that obj belongs to the same class as Media using the getClass() method
+
+11: 
+- When we iterate through the list using a for-each loop, the toString() method is called on each Media object. 
+- The toString() method is dynamically bound, meaning it is called based on the actual type of the object at runtime. 
+- For each media object in the list, the appropriate toString() method of the respective class (Book, DVD, or CompactDisc) is invoked, and the information specific to that type is printed.
+
+12:
+- The Media class.
+-
+    public class Media implements Comparable<Media> {
+        // Other attributes and methods
+        
+        @Override
+        public int compareTo(Media other) {
+            if (this.cost < other.cost) {
+                return -1;
+            } else if (this.cost > other.cost) {
+                return 1;
+            } else {
+                return this.getTitle().compareTo(other.getTitle());
+            }
+        }
+    }
+
+- 
+
+    public class DVD implements Comparable<Media> {
+        // Other attributes and methods
+        
+        @Override
+        public int compareTo(Media other) {
+            if (!m1.getTitle().equals(m2.getTitle())) { return m1.getTitle().compareTo(m2.getTitle());}
+            else 
+            {
+                if (this.cost < other.cost) {return -1;} 
+                else if (this.cost > other.cost) {return 1;} 
+                else { return 0;}
+            }
+        }
+    }

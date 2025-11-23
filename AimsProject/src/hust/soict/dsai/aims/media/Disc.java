@@ -13,10 +13,6 @@ public class Disc extends Media {
 		super(title);
 	}
 
-	public Disc(String title, String category) {
-		super(title, category);
-	}
-
 	public Disc(String title, String category, float cost) {
 		super(title, category, cost);
 	}
