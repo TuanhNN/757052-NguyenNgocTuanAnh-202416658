@@ -8,16 +8,11 @@ public class Book extends Media {
 	private List<String> authors = new ArrayList<String>();
 	 
 	//Constructor
-	public Book(String title) {
+	public Book(String title, String string, float f) {
 		super(title);
 	}
-	
-	public Book(String title, String category, List<String> authors) {
-		super(title, category);
-		this.authors = authors;
-	}
 
-	public Book(String title, String category, float cost, List<String> authors) {
+	public Book(String title, String category, List<String> authors, float cost) {
 		super(title, category, cost);
 		this.authors = authors;
 	}
@@ -38,5 +33,12 @@ public class Book extends Media {
 			System.out.println("No author has been found to remove!");
 		}
 	}
+	
+	@Override
+    public String toString() {
+        return this.getId() + " - Book: " + this.getTitle() +
+                " - Category: " + this.getCategory() +
+                " - Cost: " + this.getCost() + "$";
+    }
 
 }

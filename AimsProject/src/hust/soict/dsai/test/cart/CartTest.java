@@ -10,12 +10,8 @@ public class CartTest {
 		// TODO Auto-generated method stub
 		Cart cart = new Cart();
 		
-		Media dvd1 = new DigitalVideoDisc("The Lion King");
 		DigitalVideoDisc dvd2 = new DigitalVideoDisc("Aladdin", "Animation", 18.0f);
-		
-		
-		cart.addMedia(dvd1, dvd2);
-		
+
 		//cart.printCart();
 		
 		//cart.search(1);
