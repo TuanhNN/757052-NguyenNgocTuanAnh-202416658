@@ -7,10 +7,12 @@ public class CompactDisc extends Disc implements Playable {
 	
 	private String artist;
 	private List<Track> tracks = new ArrayList<>();
-	
-	public CompactDisc() {
-		// TODO Auto-generated constructor stub
+
+	public CompactDisc(String title, String category, float cost, String director, int length, String artist) {
+		super(title, category, cost, director, length);
+		this.artist = artist;
 	}
+
 
 	public CompactDisc(String title, String artist, List<Track> tracks) {
 		super(title);
@@ -26,13 +28,6 @@ public class CompactDisc extends Disc implements Playable {
 
 	public CompactDisc(String title, String category, float cost, String artist, List<Track> tracks) {
 		super(title, category, cost);
-		this.artist = artist;
-		this.tracks = tracks;
-	}
-
-	public CompactDisc(String title, String category, float cost, int length, String director, String artist,
-			List<Track> tracks) {
-		super(title, category, cost, length, director);
 		this.artist = artist;
 		this.tracks = tracks;
 	}

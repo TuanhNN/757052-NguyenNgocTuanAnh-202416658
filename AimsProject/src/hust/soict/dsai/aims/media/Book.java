@@ -8,8 +8,8 @@ public class Book extends Media {
 	private List<String> authors = new ArrayList<String>();
 	 
 	//Constructor
-	public Book(String title) {
-		super(title);
+	public Book(String title, String category, float cost) {
+		super(title, category, cost);
 	}
 	
 	public Book(String title, String category, List<String> authors) {
